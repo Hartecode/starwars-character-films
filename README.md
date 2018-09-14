@@ -1,6 +1,7 @@
 #Star Wars Charater Films
+[Live Site](https://gracious-noether-a8e8bd.netlify.com/)
 
-The user is able to see the moves a star wars character appeared in.  This is a simple React file. This app uses the character json file below.  
+The user is able to see the moves a star wars character appeared in.  This is a simple React app which is deployed on Netlify. This app uses the character json file below.  
 
 **NOTE:** Obi-wan's URL is intentionally incorrect, please do not modify the JSON.
 
