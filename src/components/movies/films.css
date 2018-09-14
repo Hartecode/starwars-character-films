@@ -1,0 +1,28 @@
+.films-list {
+	justify-content: space-around;
+}
+
+.Card {
+	padding: 3px; 
+	padding-bottom: 10px;
+}
+
+.innerCard {
+    box-sizing: border-box;
+    box-shadow: 0px 0px 1px 0px #ffffff;
+	border: 3px solid red;
+    padding: 10px;
+    width: 200px;
+    animation:  fadeIn 3s forwards; 
+}
+
+/*ever odd card's styling*/
+.Card:nth-child(odd) .innerCard {
+	border: 3px solid blue;
+}
+
+
+@keyframes fadeIn {
+	 0%   { opacity: 0; }
+ 	 100% { opacity: 1; }
+}

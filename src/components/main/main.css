@@ -1,0 +1,13 @@
+
+.sitelogo {
+  display: block;
+  margin: auto;
+  height: 200px;
+  width: 100%;}
+
+.container {
+	max-width: 900px;
+	margin: auto;
+	text-align: center;
+}
+

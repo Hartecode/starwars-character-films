@@ -1,5 +1,7 @@
 import React from 'react';
 import Films from './film';
+import ErrorPost from '../error/error';
+import SectionLoader from '../loading/sectionloading/sectionloading';
 
 export default function Movies(props) {
 
@@ -7,9 +9,9 @@ export default function Movies(props) {
 		if (loading === null) return '';
 
 		if (loading) {
-			return <h3>loading...</h3>
+			return <SectionLoader />
 		} else if (error) {
-			return <h3>{errorMsg}</h3>
+			return <ErrorPost errorMsg={errorMsg} />
 		} else {
 			console.log(films);
 			return <Films films={films}/>

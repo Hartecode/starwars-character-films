@@ -1,0 +1,24 @@
+.navlink, .selectedButton {
+	text-align: center;
+    width: 25%;
+    background-color: #1f1f1f;
+    box-sizing: border-box;
+    transition: all .2s ease-in-out;
+}
+.navlink {
+	cursor: pointer;
+    border: 1px solid yellow;
+}
+
+.selectedButton {
+    border: 1px solid blue;
+}
+
+.navlink:hover {
+	border: 1px solid red;
+}
+
+.navlink:active {
+ 	background-color: #2d0b01;
+ }
+

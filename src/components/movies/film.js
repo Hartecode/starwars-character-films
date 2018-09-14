@@ -1,6 +1,9 @@
 import React from 'react';
+import './films.css';
+
 
 export default function Film(props) {
+	//formates the date
 	const dateFormat = (str) => {
 		return new Date(str).toLocaleDateString('en-US', {
 			    weekday: 'long',
@@ -11,14 +14,17 @@ export default function Film(props) {
 	}
 	const populateFilms = (films=props.films) => {
 		return films.map( (obj, i) => {
-			return <li key={i}>
-				<h3>{obj.title}</h3>
-				<p>release date: {dateFormat(obj.release_date)}</p>
+			return <li className="Card" key={i}>
+				<div className="innerCard">
+					<h3>{obj.title}</h3>
+					<p>release date: </p>
+					<p>{dateFormat(obj.release_date)}</p>
+				</div>
 			</li>
 		})
 	}
 	return (
-		<ul>
+		<ul className="list-styling films-list">
 			{populateFilms()}
 		</ul>
 	)
