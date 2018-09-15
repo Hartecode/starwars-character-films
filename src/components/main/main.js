@@ -82,7 +82,7 @@ export default class Main extends React.Component {
 				this.setState({
 					loading: false,
 					error: true,
-					errorMsg: 'Unable to load the characther data'
+					errorMsg: 'Unable to load the character data'
 				});
 			});
 		}
